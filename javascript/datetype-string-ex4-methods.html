@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        var txt = "hello world";
+        var txt = "hello world world";
         console.log(txt.length);
 
         var c = txt.charAt(2);
@@ -18,6 +18,14 @@
 
         console.log(txt.charAt(0));
         console.log(txt.substr(0, 6));
+        console.log(txt.substr(7));
+        console.log(txt.substr(-2));
+        console.log(txt.replace("world","korea"));
+        console.log(txt.toUpperCase());
+        console.log(txt.toLowerCase());
+        console.log(txt.replace(/world/g,"korea"));
+
+        
     </script>
 </body>
 </html>
