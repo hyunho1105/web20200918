@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <p>주행거리</p>
+    <input type="number" id="input1">
+    <p id="result1"></p>
+    <button onclick="check1()">점수</button>
+    <p>년수</p>
+    <input type="number" id="input2">
+    <p id="result2"></p>
+    <button onclick="check2()">점수</button>
+    <p>사고횟수</p>
+    <input type="number" id="input3">
+    <p id="result3"></p>
+    <button onclick="check3()">점수</button>
+    <br>
+    <button onclick="check4()">결과확인</button>
+    <p id="result4"></p>
+    <script>
+        function check1(){
+            var a = document.getElementById("input1").value;
+            if (a >= 100000) {
+                document.getElementById("result1").innerHTML="5"
+            } else {
+                document.getElementById("result1").innerHTML="0"
+            }
+        }
+        function check2(){
+            var a = document.getElementById("input2").value;
+            if (a >= 10) {
+                document.getElementById("result2").innerHTML="5"
+            } else {
+                document.getElementById("result2").innerHTML="0"
+            }
+        }
+        function check3(){
+            var a = document.getElementById("input3").value;
+            if (a >= 5) {
+                document.getElementById("result3").innerHTML="5"
+            } else {
+                document.getElementById("result3").innerHTML="0"
+            }
+        }
+        function check4(){
+            var a = Number("result1")
+            var b = Number("result2")
+            var c = Number("result3")
+            var d = a + b + c
+            if (d >= 1) {
+                document.getElementById("result4").innerHTML="할인혜택"
+            } else {
+                document.getElementById("result4").innerHTML="죄송합니다."
+            }
+        }
+    </script>
+</body>
+</html>
